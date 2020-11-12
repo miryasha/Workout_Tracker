@@ -4,11 +4,16 @@ const mongoose = require("mongoose");
 const app = express();
 
 const PORT = process.env.PORT || 8000;
+
+app.use(morgan("dev"));
+
 //express
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan("dev"));
+
+
 
 
 // db mongo
