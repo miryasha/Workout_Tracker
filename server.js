@@ -23,5 +23,5 @@ app.listen(PORT, (err) =>{
 .catch((err) => console.log(err))
 
 //routes
-//require("./routes/api")(app);
+require("./routes/api")(app);
 require("./routes/html")(app);
