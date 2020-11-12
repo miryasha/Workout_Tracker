@@ -24,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/yasha6081/Workout_Tracker/issues"
   },
-  "homepage": "https://github.com/yasha6081/Workout_Tracker#readme"
+  "homepage": "https://github.com/yasha6081/Workout_Tracker#readme",
+  "devDependencies": {}
 }
