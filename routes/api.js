@@ -1,4 +1,4 @@
-const Workout = require("../models/workout.js")
+const Workout = require("../models/schema.js")
 
 module.exports =  (app) => {
 
@@ -16,7 +16,7 @@ module.exports =  (app) => {
         Workout.create({})
             .then((data) => res.json(data))
             .catch((err) => {
-                console.log("err", err)
+                console.log(err)
                 res.json(err)
             })
     });
@@ -29,7 +29,7 @@ module.exports =  (app) => {
         )
             .then((data) => res.json(data))
             .catch((err) => {
-                console.log( err)
+                console.log(err)
                 res.json(err)
             })
     });
