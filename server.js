@@ -20,7 +20,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useFindAndModify: false }
       ///listener
 app.listen(PORT, (err) =>{
       console.log(err);
-  });
+  })
 })
 .catch((err) => console.log(err))
 
